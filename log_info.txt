@@ -1,0 +1,10 @@
+all hint :
+1. kalo habis migrate:fresh/rollback itu harus nambahin id label sama kategori cok
+"MALAS" gini cara nya =
+> php artisan tinker
+>   \App\Models\Label::all();
+    \App\Models\Category::all();
+>   \App\Models\Label::create(['title' => 'Penting']);
+    \App\Models\Category::create(['title' => 'Kerjaan']);
+    
+-- kelar --
